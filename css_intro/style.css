@@ -1,33 +1,44 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
 h1 {
   font-size: 26px;
-  font-family: sans-serif;
   text-transform: uppercase;
   font-style: italic;
 }
 
 h2 {
   font-size: 18px;
-  font-family: sans-serif;
 }
 h3 {
   font-size: 16px;
-  font-family: sans-serif;
 }
 
 h4 {
   font-size: 14px;
-  font-family: sans-serif;
   text-transform: uppercase;
   text-align: center;
 }
 p {
   font-size: 14px;
-  font-family: sans-serif;
   line-height: 1.5;
 }
 
 li {
   font-size: 14px;
-  font-family: sans-serif;
   line-height: 1.5;
+}
+/*Descendant selectors are selectors combined from top to bottom, from
+parent element to child footer>paragraph*/
+footer p {
+  font-size: 12px;
+}
+
+article header p {
+  font-style: italic;
 }
