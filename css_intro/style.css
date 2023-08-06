@@ -5,6 +5,13 @@ h4,
 p,
 li {
   font-family: sans-serif;
+  color: #444444;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098adb9;
 }
 h1 {
   font-size: 26px;
@@ -33,12 +40,67 @@ li {
   font-size: 14px;
   line-height: 1.5;
 }
-/*Descendant selectors are selectors combined from top to bottom, from
-parent element to child footer>paragraph*/
+/* Descendant selectors are selectors combined from top to bottom, from
+parent element to child footer>paragraph
 footer p {
+  font-size: 12px;
+} */
+
+/*
+article header p {
+  font-style: italic;
+}
+*/
+
+/*We can use the id of the element to select its characteristics*/
+#author {
+  font-size: 12px;
+  font-style: italic;
+  /*Putting all the numbers in the same place give us a pure gray when the numbers ar 0,0,0 give 
+  us black and when they are all 255,255,255 give us white*/
+  color: rgb(100, 100, 100);
+}
+
+#copyrigth {
   font-size: 12px;
 }
 
-article header p {
-  font-style: italic;
+.related-author {
+  font-size: 12px;
+  font-weight: bold;
+  color: #9e9e9e;
+}
+
+.related {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f3f3f3;
+}
+
+/*Styling one part of the page*/
+aside {
+  border-top: #1098adb9 5px solid;
+  background-color: #f3f3f3;
+  border-bottom: #1098adb9 5px solid;
+}
+
+/*Choosing a background color for the entire webpage*/
+body {
+  background-color: #f7f7f7;
+}
+li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  /* font-weight: bold; */
+}
+
+li:nth-child(odd) {
+  /* color: red; */
+}
+
+article p:last-child {
+  color: red;
 }

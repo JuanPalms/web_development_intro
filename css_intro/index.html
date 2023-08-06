@@ -19,7 +19,7 @@
     <h5>The basic Languague of the web: HTML</h5>
     <h6>The basic Languague of the web: HTML</h6> 
     -->
-    <header>
+    <header class="main-header">
       <h1>📘 The Code Magazine</h1>
       <!-- Lets specify a container that gets appart these links-->
       <nav>
@@ -37,7 +37,7 @@
       <h2>The Basic Language of the Web: HTML</h2>
       <!-- Putting bold letters <b></b> but is a better practice to use the <strong></strong> tag-->
       <img src="img/laura-jones.jpg" alt="Author image" width="50", height="50"/>
-      <p>Posted by <strong>Juan Palmeros</strong> on Saturday, June 30th 2023</p>
+      <p id="author">Posted by <strong>Juan Palmeros</strong> on Saturday, June 30th 2023</p>
       <!-- The img does not have a content but an attribute src that takes as an input the image path  -->
       <!-- The img tag is a self closing tag -->
       <!-- The img tag also has an attribute called alt wich describes the image-->
@@ -103,7 +103,7 @@
     <!-- The aside element is to store secondary information realted to the main part-->
     <aside>
       <h4>Related posts</h4>
-      <ul>
+      <ul class="related">
         <li>
           <a href="#">
           <img src="img/related-1.jpg"
@@ -112,6 +112,9 @@
           height="75"/>
           How to Learn Web Development
           </a>
+          <p class = "related-author">
+            By Jonas Schmedtamann
+          </p>
         </li>
         <li>
           <a href="#">
@@ -122,6 +125,9 @@
             />
             The Unkown Power of CSS
           </a>
+          <p class="related-author">
+            By Jim Dillon
+          </p>
         </li>
         <li>
           <a href="#">
@@ -131,12 +137,15 @@
             height="75"/>
             Why JavaScript is Awesome
           </a>
+          <p class = "related-author">
+            By Juan Palmeros
+          </p>
         </li>
       </ul>
     </aside>
     
     <footer>
-    <p>
+    <p id="copyrigth">
       Copyrigth &copy; 2023 The Code Magazine
     </p>
     </footer>
