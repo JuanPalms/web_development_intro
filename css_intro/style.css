@@ -61,6 +61,11 @@ p {
   margin-bottom: 40px;
 }
 
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
 /*Styling one part of the page*/
 aside {
   border-top: #1098adb9 5px solid;
