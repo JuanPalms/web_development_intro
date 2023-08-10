@@ -53,12 +53,11 @@ p {
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   height: 120px;
-  text-align: center;
 }
 .post-header {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .container {
@@ -136,6 +135,7 @@ body {
   color: #444444;
   font-family: sans-serif;
   border-top: #1098adb9 12px solid;
+  position: relative;
 }
 li:first-child {
   font-weight: bold;
@@ -162,19 +162,33 @@ a:active {
 }
 
 nav {
-  padding: 15px;
-  margin-bottom: 15px;
-  margin-top: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 nav a {
   border-style: ridge none;
   border-color: #1098adb9;
-  background-color: #dfdede42;
+  background-color: #fffdfd42;
   font-size: 20px;
   color: #1098adb9;
   padding: 5px;
   margin-right: 10px;
   margin-left: 10px;
   margin-top: 10px;
+}
+
+/* nav a:link {
+  background-color: orangered;
+  margin: 20px;
+} */
+
+#like-button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  /* position: absolute; */
+  bottom: 50px;
+  right: 50px;
 }
