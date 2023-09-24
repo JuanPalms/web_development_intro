@@ -176,3 +176,7 @@ body {
   font-size: 50px;
   background-color: aqua;
 } */
+
+strong {
+  font-weight: 500;
+}
